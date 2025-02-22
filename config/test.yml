@@ -1,0 +1,5 @@
+typeOrm:
+  username: root
+  password: my-secret-pw
+  database: health_orders_test
+logLevel: log
