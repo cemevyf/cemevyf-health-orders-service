@@ -16,7 +16,6 @@ export class ClientController {
   @Post()
   @ApiOperation({ summary: 'Create a new client', operationId: 'createClient' })
   @ApiOkResponse({
-    status: HttpStatus.CREATED,
     type: CreateClientResponseDto,
   })
   @ApiResponse({ status: HttpStatus.CONFLICT, description: 'Conflict' })
@@ -38,7 +37,6 @@ export class ClientController {
   @ApiParam({ type: 'string', name: 'id' })
   @ApiOperation({ summary: 'Gets details of an specific client', operationId: 'findClient' })
   @ApiOkResponse({
-    status: HttpStatus.OK,
     type: ClientResponseDto,
   })
   @ApiResponse({ status: HttpStatus.NOT_FOUND, description: 'Client not found' })
